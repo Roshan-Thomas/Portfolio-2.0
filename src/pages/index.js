@@ -10,7 +10,6 @@ import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import Feature from '../sections/feature';
-import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
@@ -18,6 +17,7 @@ import TestimonialCard from '../sections/testimonial';
 // webpage imports
 import Hero from '../sections/hero';
 import AboutMe from '../sections/about-me';
+import CreativeProcess from '../sections/creative-process';
 
 
 export default function IndexPage() {
@@ -30,7 +30,7 @@ export default function IndexPage() {
           <KeyFeature />
           <ServiceSection />
           <Feature />
-          <WorkFlow />
+          <CreativeProcess />
           <Package />
           <TeamSection />
           <TestimonialCard />
