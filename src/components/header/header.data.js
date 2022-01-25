@@ -1,15 +1,15 @@
 export default [
   {
-    path: 'home',
+    path: 'hero',
     label: 'Home',
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: 'aboutMe',
+    label: 'About',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'works',
+    label: 'Work',
   },
   {
     path: 'testimonial',
