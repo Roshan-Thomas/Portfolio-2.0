@@ -11,8 +11,4 @@ export default [
     path: 'works',
     label: 'Work',
   },
-  {
-    path: 'testimonial',
-    label: 'Testimonial',
-  },
 ];

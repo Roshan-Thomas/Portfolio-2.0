@@ -2,7 +2,7 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/about-me-pic.webp';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
@@ -28,7 +28,7 @@ export default function AboutMe() {
         />
       </Box>
       <Box sx={styles.thumbnail}>
-        <Image src={FeatureThumb} alt="Thumbnail" />
+        <Image src={FeatureThumb} alt="Thumbnail" sx={{ "borderRadius": "25px" }} />
         <Box sx={styles.shapeBox}>
           <Image src={shapePattern} alt="Shape"/>
         </Box>
