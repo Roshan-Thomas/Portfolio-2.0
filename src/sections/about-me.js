@@ -9,7 +9,7 @@ const data = {
   subTitle: 'Roshan Thomas',
   title: 'About Me',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
+    'I am a junior at Texas A&M University at Qatar. My major is Electrical Engineer and Computer Science. I am very passionate about programming. I have a wide array of skills, including web designing, prototyping, and full-stack app development.',
   btnName: 'Get in Touch',
   btnURL: '#',
 };

@@ -6,7 +6,6 @@ import theme from 'theme';
 
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 import ServiceSection from '../sections/service-section';
 import Feature from '../sections/feature';
@@ -18,6 +17,7 @@ import TestimonialCard from '../sections/testimonial';
 import Hero from '../sections/hero';
 import AboutMe from '../sections/about-me';
 import CreativeProcess from '../sections/creative-process';
+import SelectedWork from '../sections/selected-work';
 
 
 export default function IndexPage() {
@@ -27,13 +27,8 @@ export default function IndexPage() {
           <SEO title="Portfolio - Roshan Thomas" />
           <Hero />
           <AboutMe />
-          <KeyFeature />
-          <ServiceSection />
-          <Feature />
           <CreativeProcess />
-          <Package />
-          <TeamSection />
-          <TestimonialCard />
+          <SelectedWork />
         </Layout>
     </ThemeProvider>
   );
