@@ -18,6 +18,7 @@ import Hero from '../sections/hero';
 import AboutMe from '../sections/about-me';
 import CreativeProcess from '../sections/creative-process';
 import SelectedWork from '../sections/selected-work';
+import ContactMe from 'sections/contact-me';
 
 
 export default function IndexPage() {
@@ -29,6 +30,7 @@ export default function IndexPage() {
           <AboutMe />
           <CreativeProcess />
           <SelectedWork />
+          <ContactMe />
         </Layout>
     </ThemeProvider>
   );
