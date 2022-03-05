@@ -1,27 +1,21 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import ShapeLeft from 'assets/shape-left.svg';
+import ShapeRight from 'assets/shape-right.svg';
 
-export default function Banner() {
+export default function Hero() {
   return (
-    <section sx={styles.banner} id="home">
+    <section sx={styles.banner} id="hero">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Produts to Explore
+            When the winds of change blow, some people build walls and others build windmills.
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Check out our website to find great software products and deals! 
-            If you need a website or a web application, this is the place to go!
+            I am here to activate your team and kick-start the next phase.
           </Text>
-          <Button variant="primary">Explore</Button>
-        </Box>
-
-        <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt='banner'/>
+          <Button variant="primary">Get in Touch</Button>
         </Box>
       </Container>
     </section>

@@ -1,18 +1,14 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: 'aboutMe',
+    label: 'About',
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: 'works',
+    label: 'Selected Work',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
-  },
-  {
-    path: 'testimonial',
-    label: 'Testimonial',
-  },
+    path: 'creative-process',
+    label: 'Creative Process'
+  }
 ];

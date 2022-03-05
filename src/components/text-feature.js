@@ -7,6 +7,8 @@ export default function TextFeature({
   description,
   btnName,
   btnURL = '#',
+  btnName2,
+  btnURL2 = '#',
 }) {
   return (
     <Box sx={styles.card}>
@@ -26,13 +28,12 @@ export default function TextFeature({
       )}
 
       {btnName && (
-        <Link href={btnURL} variant="default">
+        <Link href={btnURL} variant="default" target="_blank">
           <Button variant="primary" aria-label={btnName}>
             {btnName}
           </Button>
         </Link>
       )}
-
     </Box>
   );
 }

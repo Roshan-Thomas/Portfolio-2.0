@@ -10,37 +10,37 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Identify & Clarify',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'One of the most essential steps in the process is identifying and defining all aspects of the project, such as project goals, audience, market, competitors, specifications, & requirements.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Discover & Strategize',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'My goal with each project is to deliver solid and real-world solutions that achieve actual business needs. We do this through idea generation & exploration to discover which paths make sense.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Designing an Experience',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'The creative part of the process, where we take everything we have learned and use it to help direct a solution-based design approach that aims to solve the issues and achieve our set goals.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Deliver & Direct',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'The real world rarely matches the blueprints. So, I stick around to make sure reality matches the vision. And, if not, I am there to help direct or offer possible solutions.',
   },
 ];
 
-export default function WorkFlow() {
+export default function CreativeProcess() {
   return (
-    <section sx={styles.workflow}>
+    <section sx={styles.workflow} id='creative-process'>
       <Container>
         <SectionHeader 
-        slogan="What's the function"
-        title="Meet the feature of our product"
+        slogan="Process & Services"
+        title="Creative Process"
         isWhite={true}
         />
 

@@ -1,21 +1,20 @@
 /** @jsx jsx */
 import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
+import Avatar1 from 'assets/selectedwork/pipory-logo.webp';
+import Avatar2 from 'assets/selectedwork/weather_icon.webp';
+import Avatar3 from 'assets/selectedwork/react-logo.webp';
+import Avatar4 from 'assets/selectedwork/django.svg';
 
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Designing Pipory.com',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'Pipory is an upcoming social media platform that aims at motivating users to pursue their creative talents (Poems & Quotes, Photography, Art, Memes & Writings) by providing rewards, discounts & monetization for their posts.',
     avatar: Avatar1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
@@ -23,9 +22,9 @@ const data = [
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Weather App (Vue.js)',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The app is a weather application, which shows the temperature of different cities and countries around the world. Depending on the temperature, the background image changes from cold to hot. This gives a visual aid to the user.',
     avatar: Avatar2,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
@@ -33,9 +32,9 @@ const data = [
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'Voice Controlled News Reader (React.js)',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The app allows you to read the news from anywhere on the internet, from multiple newspapers. The most important feature about the app is that you dont even have to touch the mouse to get the news.',
     avatar: Avatar3,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
@@ -43,9 +42,9 @@ const data = [
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'E-Commerce Website (Django)',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'The website displays products. Users can add and remove products to/from their cart while also specifying the quantity of each item. They can then enter their address and choose Stripe to handle the payment processing.',
     avatar: Avatar4,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
@@ -99,20 +98,18 @@ const carouselParams = {
   slidesToSlide:1,
 }
 
-export default function TestimonialCard() {
+export default function SelectedWorkCarousel() {
   return (
-   <section id="testimonial" sx={{ variant: 'section.testimonial'}}>
+   <section id="works" sx={{ variant: 'section.testimonial'}}>
      <Container css={{ textAlign: 'center' }}>
       <SectionHeader 
-        slogan="Testimonial"
-        title="Meet Client Statisfaction"
+        title="Selected Work"
       />
      </Container>
      <Box sx={styles.carouselWrapper}>
        <Carousel {...carouselParams}>
         {data.map((item) => (
           <Box sx={styles.reviewCard} key={item.id}>
-            <Rating rating={item.review} />
             <Heading as="h3" sx={styles.title}>
               {item.title}
             </Heading>

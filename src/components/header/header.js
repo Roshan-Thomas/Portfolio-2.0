@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+import LogoDark from 'assets/Roshan-Thomas-Logo.webp';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -27,8 +27,17 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <Button className="donate__btn" variant="secondary" aria-label="Get Started">
-            Get Started
+          <Button className="donate__btn" variant="secondary" aria-label="Get in Touch">
+            <Link
+                activeClass="active"
+                to="contactme"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+              Get in Touch
+            </Link>
           </Button>
           <MobileDrawer />
         </Container>

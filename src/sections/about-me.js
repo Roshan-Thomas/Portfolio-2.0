@@ -2,21 +2,21 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/about-me-pic.webp';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: "Hello, I am",
+  title: 'Roshan Thomas',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
-  btnURL: '#',
+    'I am an aspiring electrical engineer currently studying at Texas A&M University at Qatar and expected to graduate on May 2023. I am very passionate about coding (Check out my projects below).',
+  btnName: 'My Resume',
+  btnURL: 'https://pdfhost.io/v/TLmoOR3HD_Roshan_Thomas_Resume',
 };
 
-export default function CoreFeature() {
+export default function AboutMe() {
   return (
-   <section sx={{variant: 'section.coreFeature'}}>
+   <section sx={{variant: 'section.coreFeature'}} id="aboutMe">
     <Container sx={styles.containerBox}>
       <Box sx={styles.contentBox}>
         <TextFeature 
@@ -28,7 +28,7 @@ export default function CoreFeature() {
         />
       </Box>
       <Box sx={styles.thumbnail}>
-        <Image src={FeatureThumb} alt="Thumbnail" />
+        <Image src={FeatureThumb} alt="Thumbnail" sx={{ "borderRadius": "25px" }} />
         <Box sx={styles.shapeBox}>
           <Image src={shapePattern} alt="Shape"/>
         </Box>
@@ -44,6 +44,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     flexWrap: ['wrap', null, null, 'nowrap'],
+    marginTop: '150px',
     pb: [0, 7, 0, null, 7],
   },
   contentBox: {
@@ -70,8 +71,8 @@ const styles = {
   },
   shapeBox: {
     position: 'absolute',
-    bottom: -65,
-    right: -165,
+    bottom: -150,
+    right: -200,
     zIndex: -1,
     display: ['none', 'inline-block', 'none', null, 'inline-block'],
   },
