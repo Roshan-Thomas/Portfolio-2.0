@@ -36,7 +36,7 @@ const data = [
 
 export default function CreativeProcess() {
   return (
-    <section sx={styles.workflow}>
+    <section sx={styles.workflow} id='creative-process'>
       <Container>
         <SectionHeader 
         slogan="Process & Services"
