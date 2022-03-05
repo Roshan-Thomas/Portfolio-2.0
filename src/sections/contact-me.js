@@ -28,6 +28,7 @@ const styles = {
       alignItems: 'center',
       justifyContent: 'space-between',
       flexWrap: ['wrap', null, null, 'nowrap'],
+      marginTop: '100px',
       pb: [0, 7, 0, null, 7],
     },
     input: {

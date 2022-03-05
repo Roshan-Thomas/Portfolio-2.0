@@ -6,11 +6,11 @@ import FeatureThumb from 'assets/about-me-pic.webp';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Roshan Thomas',
-  title: 'About Me',
+  subTitle: "Hello, I am",
+  title: 'Roshan Thomas',
   description:
-    'I am a junior at Texas A&M University at Qatar. My major is Electrical Engineer and Computer Science. I am very passionate about programming. I have a wide array of skills, including web designing, prototyping, and full-stack app development.',
-  btnName: 'Get in Touch',
+    'I am an aspiring electrical engineer currently studying at Texas A&M University at Qatar and expected to graduate on May 2023. I am very passionate about programming (Check out my projects below).',
+  btnName: 'My Resume',
   btnURL: '#',
 };
 
@@ -44,6 +44,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     flexWrap: ['wrap', null, null, 'nowrap'],
+    marginTop: '150px',
     pb: [0, 7, 0, null, 7],
   },
   contentBox: {

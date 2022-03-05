@@ -26,10 +26,9 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
         <Layout>
           <SEO title="Portfolio - Roshan Thomas" />
-          <Hero />
           <AboutMe />
-          <CreativeProcess />
           <SelectedWork />
+          <CreativeProcess />
           <ContactMe />
         </Layout>
     </ThemeProvider>

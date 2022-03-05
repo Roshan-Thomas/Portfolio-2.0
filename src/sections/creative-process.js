@@ -22,7 +22,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Designing An Experience',
+    title: 'Designing an Experience',
     text:
       'The creative part of the process, where we take everything we have learned and use it to help direct a solution-based design approach that aims to solve the issues and achieve our set goals.',
   },
@@ -40,7 +40,7 @@ export default function CreativeProcess() {
       <Container>
         <SectionHeader 
         slogan="Process & Services"
-        title="Creative Process."
+        title="Creative Process"
         isWhite={true}
         />
 
