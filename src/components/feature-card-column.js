@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { STATUS_RELEASED } from 'react-stickynode';
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
