@@ -11,7 +11,7 @@ const data = {
   description:
     'I am an aspiring electrical engineer currently studying at Texas A&M University at Qatar and expected to graduate on May 2023. I am very passionate about programming (Check out my projects below).',
   btnName: 'My Resume',
-  btnURL: '#',
+  btnURL: 'https://pdfhost.io/v/TLmoOR3HD_Roshan_Thomas_Resume',
 };
 
 export default function AboutMe() {

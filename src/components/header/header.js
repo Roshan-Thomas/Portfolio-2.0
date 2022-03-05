@@ -28,7 +28,16 @@ export default function Header({ className }) {
             ))}
           </Flex>
           <Button className="donate__btn" variant="secondary" aria-label="Get in Touch">
-            Get in Touch
+            <Link
+                activeClass="active"
+                to="contactme"
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+              Get in Touch
+            </Link>
           </Button>
           <MobileDrawer />
         </Container>
