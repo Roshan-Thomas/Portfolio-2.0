@@ -8,11 +8,11 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 
 // webpage imports
-import Hero from '../sections/hero';
 import AboutMe from '../sections/about-me';
 import CreativeProcess from '../sections/creative-process';
-import SelectedWork from '../sections/selected-work';
 import ContactMe from 'sections/contact-me';
+
+import SelectedWorkGrid from 'sections/selected-work-grid';
 
 
 export default function IndexPage() {
@@ -21,7 +21,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Portfolio - Roshan Thomas" />
           <AboutMe />
-          <SelectedWork />
+          <SelectedWorkGrid />
           <CreativeProcess />
           <ContactMe />
         </Layout>

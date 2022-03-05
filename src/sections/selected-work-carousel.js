@@ -98,7 +98,7 @@ const carouselParams = {
   slidesToSlide:1,
 }
 
-export default function SelectedWork() {
+export default function SelectedWorkCarousel() {
   return (
    <section id="works" sx={{ variant: 'section.testimonial'}}>
      <Container css={{ textAlign: 'center' }}>

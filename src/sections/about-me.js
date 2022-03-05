@@ -9,7 +9,7 @@ const data = {
   subTitle: "Hello, I am",
   title: 'Roshan Thomas',
   description:
-    'I am an aspiring electrical engineer currently studying at Texas A&M University at Qatar and expected to graduate on May 2023. I am very passionate about programming (Check out my projects below).',
+    'I am an aspiring electrical engineer currently studying at Texas A&M University at Qatar and expected to graduate on May 2023. I am very passionate about coding (Check out my projects below).',
   btnName: 'My Resume',
   btnURL: 'https://pdfhost.io/v/TLmoOR3HD_Roshan_Thomas_Resume',
 };
