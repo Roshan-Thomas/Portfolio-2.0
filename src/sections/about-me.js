@@ -71,8 +71,8 @@ const styles = {
   },
   shapeBox: {
     position: 'absolute',
-    bottom: -65,
-    right: -165,
+    bottom: -150,
+    right: -200,
     zIndex: -1,
     display: ['none', 'inline-block', 'none', null, 'inline-block'],
   },

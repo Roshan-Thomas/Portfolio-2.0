@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import ShapeLeft from 'assets/shape-left.svg';
+import ShapeRight from 'assets/shape-right.svg';
 
 export default function Hero() {
   return (
