@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Heading, Text, Box, Image, Grid, Link } from 'theme-ui';
 import SectionHeader from 'components/section-header';
