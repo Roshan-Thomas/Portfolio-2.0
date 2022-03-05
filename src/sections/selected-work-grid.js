@@ -1,11 +1,13 @@
 /** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image, Grid } from 'theme-ui';
+import { jsx, Container, Heading, Text, Box, Image, Grid, Link } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 
-import Avatar1 from 'assets/selectedwork/pipory-logo.webp';
-import Avatar2 from 'assets/selectedwork/weather_icon.webp';
-import Avatar3 from 'assets/selectedwork/react-logo.webp';
-import Avatar4 from 'assets/selectedwork/django.svg';
+import Avatar1 from 'assets/selectedwork/pipory-website_1.webp';
+import Avatar2 from 'assets/selectedwork/kilo-text-editor.webp';
+import Avatar3 from 'assets/selectedwork/react-voice_1.webp';
+import Avatar4 from 'assets/selectedwork/django-ecommerce.webp';
+
+import { FaGithub } from 'react-icons/fa'
 
 const data = [
     {
@@ -13,14 +15,16 @@ const data = [
       title: 'Designing Pipory.com',
       description:
         'Pipory is an upcoming social media platform that aims at motivating users to pursue their creative talents (Poems & Quotes, Photography, Art, Memes & Writings) by providing rewards, discounts & monetization for their posts.',
-      avatar: Avatar3,
+      avatar: Avatar1,
+      repoURL: 'https://github.com/Roshan-Thomas/Pipory-main-website-react',
     },
     {
       id: 2,
       title: 'Kilo Text Editor',
       description:
-        'Kilo is a terminal text editor made using C. It is primarily for editing C and C++ files, and it has the features that you would see on any modern-day text-editor such as syntax highlighting which is perfect for day-to-day use.',
-      avatar: Avatar3,
+        'Kilo is a terminal text editor made using C. It is primarily for editing C and C++ files, and it has the features that you would see on any modern-day text-editor such as syntax highlighting for key words, multi-line and single-line comments, special non-printable characters, C and C++ keywords highlighting.',
+      avatar: Avatar2,
+      repoURL: 'https://github.com/Roshan-Thomas/kilo-text-editor-c',
     },
     {
       id: 3,
@@ -28,13 +32,15 @@ const data = [
       description:
         'The app allows you to read the news from anywhere on the internet, from multiple newspapers. The most important feature about the app is that you dont even have to touch the mouse to get the news.',
       avatar: Avatar3,
+      repoURL: 'https://github.com/Roshan-Thomas/React-Voice-Controlled-News-Reader',
     },
     {
       id: 4,
       title: 'E-Commerce Store (Django)',
       description:
         'The website displays products. Users can add and remove products to/from their cart while also specifying the quantity of each item. They can then enter their address and choose Stripe to handle the payment processing.',
-      avatar: Avatar3,
+      avatar: Avatar4,
+      repoURL: 'https://github.com/Roshan-Thomas/Django-Ecommerce-Website',
     },
 ];
 
@@ -58,7 +64,10 @@ return (
                 </Heading>
                 <Text sx={styles.description}>
                     {item.description}
-                </Text>    
+                </Text>
+                <Link href={item.repoURL} variant="default" target="_blank" sx={styles.repoLink}>
+                  <FaGithub /><p className="paragraph">Link to Github Repo</p> 
+                </Link>    
             </Box>
         ))}
         </Grid>
@@ -135,4 +144,19 @@ heading: {
     color: 'text',
     lineHeight: 1.3,
 },
+repoLink: {
+  textDecoration: 'none',
+  display: 'flex',
+  color: 'heading',
+  fontWeight: 700,
+  marginTop: [5, null, null, '33px'],
+  alignItems: 'center',
+
+  '&:hover, &:active': {
+    color: 'accent',
+  },
+  '.paragraph': {
+    textIndent: '5px',
+  }
+}
 };
